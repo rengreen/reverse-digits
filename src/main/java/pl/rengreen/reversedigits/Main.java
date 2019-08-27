@@ -15,10 +15,15 @@ public class Main {
 
         //reversing digits
         Digits digits = new Digits();
-        int result = digits.reverseDigits(number);
+        long result = digits.reverseDigits(number);
 
         //output
-        System.out.println("Reversed number: " + result);
+        if (result <= Integer.MAX_VALUE) {
+            System.out.println("Reversed number: " + result);
+        } else {
+            System.out.println("Reversed number " + result + " exceeds Integer range (" + Integer.MAX_VALUE + ")");
+        }
+
     }
 
     private static int readNumber() {
