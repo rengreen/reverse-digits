@@ -18,6 +18,9 @@ public class Main {
         long result = digits.reverseDigits(number);
 
         //output
+        if (number%10==0) {
+            System.out.println("Warning! Zeros as initial digits are not visible.");
+        }
         if (result <= Integer.MAX_VALUE) {
             System.out.println("Reversed number: " + result);
         } else {
@@ -52,4 +55,3 @@ public class Main {
         return number;
     }
 }
-
