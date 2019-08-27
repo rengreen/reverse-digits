@@ -22,4 +22,13 @@ public class DigitsTest {
         assertEquals(0, digits.reverseDigits(0));
     }
 
+    @Test
+    public void reverseDigits_MaxIntegerShouldGive7463847412() {
+        assertEquals(0, digits.reverseDigits(0));
+    }
+
+    @Test
+    public void reverseDigits_1000ShouldGive1() {
+        assertEquals(1, digits.reverseDigits(1000));
+    }
 }
