@@ -24,6 +24,7 @@ public class Main {
         if (result <= Integer.MAX_VALUE) {
             System.out.println("Reversed number: " + result);
         } else {
+            //result is counted as long value, the message informs that the Integer range has been exceeded
             System.out.println("Reversed number " + result + " exceeds Integer range (" + Integer.MAX_VALUE + ")");
         }
 
