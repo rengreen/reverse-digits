@@ -24,7 +24,7 @@ public class DigitsTest {
 
     @Test
     public void reverseDigits_MaxIntegerShouldGive7463847412() {
-        assertEquals(0, digits.reverseDigits(0));
+        assertEquals(7463847412L, digits.reverseDigits(Integer.MAX_VALUE));
     }
 
     @Test
